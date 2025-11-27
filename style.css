@@ -1,4 +1,15 @@
-/* Header styles removed */
+header {
+    background-color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.header-logo {
+    max-width: 150px;
+    width: 100%;
+    height: auto;
+}
 
 /* Hero Section */
 #hero {
@@ -12,16 +23,6 @@
     justify-content: center;
     text-align: center;
     color: white;
-}
-
-.hero-logo {
-    max-width: 300px;
-    width: 100%;
-    height: auto;
-    margin-bottom: 1.5rem;
-    border-radius: 50%;
-    /* Optional: circular logo if appropriate, or remove if square is better */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .hero-text p {
