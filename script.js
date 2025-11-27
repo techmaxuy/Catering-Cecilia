@@ -33,12 +33,27 @@ function createProductCard(item) {
     const card = document.createElement('article');
     card.className = 'product-card';
 
-    // Image handling (Placeholder for now as no images are provided yet)
-    // In a real scenario, we would check if an image exists in 'imagenes/' based on item.name
+    // Image handling
     const imageContainer = document.createElement('div');
-    imageContainer.className = 'card-image-placeholder';
-    imageContainer.innerHTML = '<i class="fa-solid fa-utensils"></i>';
-    // If we had images: <img src="imagenes/${slugify(item.name)}.jpg" alt="${item.name}">
+    imageContainer.className = 'product-image-container';
+
+    // Simple slugify: lowercase and remove spaces
+    const imageSlug = item.name.toLowerCase().replace(/\s+/g, '');
+    // Mapping for specific cases if needed, but the pattern seems consistent based on file list
+    // Files: alfajormaicena.png, budines.png, etc.
+
+    const img = document.createElement('img');
+    img.src = `imagenes/${imageSlug}.png`;
+    img.alt = item.name;
+    img.className = 'product-image';
+
+    // Fallback if image fails to load (optional, but good practice)
+    img.onerror = function () {
+        this.style.display = 'none';
+        imageContainer.innerHTML = '<div class="card-image-placeholder"><i class="fa-solid fa-utensils"></i></div>';
+    };
+
+    imageContainer.appendChild(img);
 
     const content = document.createElement('div');
     content.className = 'card-content';
