@@ -38,11 +38,16 @@ function createProductCard(item) {
     imageContainer.className = 'product-image-container';
 
     const customImageMap = {
-        "Alfajores de Maicena": "alfajormaicena.png",
+        "Alfajores de Maicena": "alfajormaicena.jpg",
+        "Budines": "budines.jpg",
+        "Caja Dulcera": "cajadulcera.png",
+        "Calzone Napolitano": "calzonenapolitano.png",
+        "Pasta Frola": "pastafrola.jpg",
+        "Pizzetas con gusto a elección": "pizzetascongustos.jpg",
+        "Pizzetas con Muzzarella": "pizzetasmuzzarela.jpg",
         "Salchichón de Chocolate": "salchichonchocolate.png",
-        "Tortas Saladas": "tortasalada.png",
-        "Pizzetas con Muzzarella": "pizzetasmuzzarela.png",
-        "Pizzetas con gusto a elección": "pizzetascongustos.png"
+        "Tarta Frutal": "tartafrutal.jpg",
+        "Tortas Saladas": "tortasalada.png"
     };
 
     let imageName;
