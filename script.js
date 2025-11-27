@@ -40,8 +40,8 @@ function createProductCard(item) {
     const customImageMap = {
         "Alfajores de Maicena": "alfajormaicena.jpg",
         "Budines": "budines.jpg",
-        "Caja Dulcera": "cajadulcera.png",
-        "Calzone Napolitano": "calzonenapolitano.png",
+        "Caja Dulcera": "cajadulcera.jpg",
+        "Calzone Napolitano": "calzonenapolitano.jpg",
         "Pasta Frola": "pastafrola.jpg",
         "Pizzetas con gusto a elección": "pizzetascongustos.jpg",
         "Pizzetas con Muzzarella": "pizzetasmuzzarela.jpg",
